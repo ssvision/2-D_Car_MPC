@@ -175,7 +175,7 @@ for i in range(length):
     U_log.append(np.array(Uk[:,0]).reshape(2,1))  #store the value of 1st control effort in the horizon
     
 
-    # simulate system
+    # simulate the system
     #get the entire value of states in the horizon
     for j in range(Uk.shape[1]):
         X0 = F(X0,Uk[:,j]).full()*1 #compute state
